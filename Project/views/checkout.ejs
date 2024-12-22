@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Checkout - Forklore Restaurant</title>
+        <link rel="/" href="/pictures/logo3.jpeg" type="image/x-icon" >
+        <!-- Bootstrap CSS -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="project_homepage.css">
+        <!-- Font Awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="project_homepage.css">
+    </head>
+<body class="bg-dark text-light">
+
+    <header class="header">
+        <a href="/" ><img src="/pictures/logo3.jpeg" class="logo"></a>
+        <a href="/" ><h1>FORKLORE</h1></a>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <div class="container-fluid">
+                <!--<a class="navbar-brand " href="#foodCarousel">FORKLORE</a> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/menu" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Menu
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="menu.html#burgers">Burgers</a></li>
+                                <li><a class="dropdown-item" href="menu.html#pizzas">Pizzas</a></li>
+                                <li><a class="dropdown-item" href="menu.html#pastas">Pastas</a></li>
+                                <li><a class="dropdown-item" href="menu.html#rice">Rice</a></li>
+                                <li><a class="dropdown-item" href="menu.html#desserts">Desserts</a></li>
+                                <li><a class="dropdown-item" href="menu.html#drinks">Drinks</a></li>
+                                <li><a class="dropdown-item" href="menu.html#starters">Starters</a></li>
+                                <li><a class="dropdown-item" href="menu.html#deals">Deals</a></li>
+                                <li><a class="dropdown-item" href="menu.html#bbq">BBQ</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/review">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login"><i class="fas fa-user"></i></a>
+                        </li>
+                        
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="tel:+123456789"><i class="fas fa-phone-alt"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/cart">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="badge badge-pill badge-warning" id="cart-count">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-5">
+        <h2 class="text-center">Billing Details</h2>
+
+        <div class="row">
+            <div class="col-md-6">
+                <form id="billing-form">
+                    <div class="form-group">
+                        <label for="order-type">Order Type *</label>
+                        <select id="order-type" class="form-control" required>
+                            <option value="">Select Order Type</option>
+                            <option value="delivery">Delivery</option>
+                            <option value="pickup">Pickup</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="city">Select City *</label>
+                        <select id="city" class="form-control" required>
+                            <option value="">--Select City--</option>
+                            <option value="karachi">Karachi</option>
+                            <option value="lahore">Lahore</option>
+                            <option value="islamabad">Islamabad</option>
+                            <option value="quetta">Quetta</option>
+                            <option value="gujrat">Gujrat</option>
+                            <option value="sargodha">Sargodha</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="full-name">Full Name *</label>
+                        <input type="text" id="full-name" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="country">Country / Region (optional)</label>
+                        <input type="text" id="country" class="form-control" value="Pakistan">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Street Address *</label>
+                        <input type="text" id="address" class="form-control" required placeholder="House number and street name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone *</label>
+                        <input type="text" id="phone" class="form-control" required>
+                    </div>
+
+                    <h3 class="mt-5">Your Order</h3>
+                    <div id="order-summary">
+                        <!-- Order details will be dynamically populated here -->
+                    </div>
+
+                    <div class="mt-4">
+                        <h4>Payment Method</h4>
+                        <div class="form-check">
+                            <input type="radio" id="payment-cash" class="form-check-input" name="payment" value="cash">
+                            <label for="payment-cash" class="form-check-label">Cash on Delivery</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" id="payment-card" class="form-check-input" name="payment" value="card">
+                            <label for="payment-card" class="form-check-label">Pay with Card</label>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 text-center">
+                        <button type="submit" class="btn btn-warning">Place Order</button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="col-md-6">
+                <h3>Additional Information</h3>
+                <div class="form-group">
+                    <label for="email">Email address *</label>
+                    <input type="email" id="email" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="order-notes">Order notes (optional)</label>
+                    <textarea id="order-notes" class="form-control" rows="4"></textarea>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer bg-dark text-light mt-5">
+        <div class="container text-center">
+            <p>Forklore Restaurant © 2024. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="login.js"></script>
+    <script src="cart.js"></script>
+    <script src="checkout.js"></script>
+</body>
+</html>

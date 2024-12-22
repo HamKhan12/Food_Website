@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU - Forklore Restaurant</title>
+    <link rel="icon" href="/pictures/logo3.jpeg" type="image/x-icon" >
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="project_homepage.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+ 
+<body>
+    <header class="header">
+        <a href="/" ><img src="/pictures/logo3.jpeg" class="logo"></a>
+        <a href="/" ><h1>FORKLORE</h1></a>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <div class="container-fluid">
+                <!--<a class="navbar-brand " href="#foodCarousel">FORKLORE</a> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/menu" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Menu
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="menu.html#burgers">Burgers</a></li>
+                                <li><a class="dropdown-item" href="menu.html#pizzas">Pizzas</a></li>
+                                <li><a class="dropdown-item" href="menu.html#pastas">Pastas</a></li>
+                                <li><a class="dropdown-item" href="menu.html#rice">Rice</a></li>
+                                <li><a class="dropdown-item" href="menu.html#desserts">Desserts</a></li>
+                                <li><a class="dropdown-item" href="menu.html#drinks">Drinks</a></li>
+                                <li><a class="dropdown-item" href="menu.html#starters">Starters</a></li>
+                                <li><a class="dropdown-item" href="menu.html#deals">Deals</a></li>
+                                <li><a class="dropdown-item" href="menu.html#bbq">BBQ</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/review">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login"><i class="fas fa-user"></i></a>
+                        </li>
+                        
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="tel:+123456789"><i class="fas fa-phone-alt"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/cart">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="badge badge-pill badge-warning" id="cart-count">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+     <!-- Navigation Bar -->
+    <div class="menu-bar">
+        <ul>
+            <li><a href="#burgers">Burgers</a></li>
+            <li><a href="#pizzas">Pizzas</a></li>
+            <li><a href="#pastas">Pastas</a></li>
+            <li><a href="#rice">Rice</a></li>
+            <li><a href="#desserts">Desserts</a></li>
+            <li><a href="#drinks">Drinks</a></li>
+            <li><a href="#starters">Strater</a></li>
+            <li><a href="#deals">Deals</a></li>
+            <li><a href="#bbq">BBQ</a></li>
+        </ul>
+    </div>
+
+    <!-- Menu Grid -->
+    <div class="menu-gallery">
+        <!-- Burgers Section -->
+        <div id="burgers" class="category">
+            <h3>Burgers</h3>
+            <figure class="row">
+                <div >
+                    <img src="/pictures/crunch burger.png" alt="Burger 1">
+                    <h3>Cheese Burger</h3>
+                    <p>A juicy burger with melted cheese.</p>
+                    <span>$7.99</span>
+                    <br>
+                    <button class="add-to-cart-btn" data-item="Cheese Burger" href="/add-to-cart">Add to Cart</button>
+                </div>
+                <div >
+                    <img src="/pictures/beef burger.png" alt="Burger 2">
+                    <h3>Bacon Burger</h3>
+                    <p>A burger topped with crispy bacon.</p>
+                    <span>$8.99</span>
+                    <br>
+                    <button class="add-to-cart-btn" data-item="Bacon Burger">Add to Cart</button>
+                </div>
+                <div >
+                    <img src="/pictures/Vintage burger.png" alt="Burger 3">
+                    <h3>Veggie Burger</h3>
+                    <p>A healthy veggie patty with fresh toppings.</p>
+                    <span>$6.99</span>
+                    <br>
+                    <button class="add-to-cart-btn" data-item="Veggie Burger">Add to Cart</button>
+                </div>
+            </figure>
+        </div>
+
+        <!-- Pizzas Section -->
+        <div id="pizzas" class="category">
+            <h3>Pizzas</h3>
+            <figure class="row">
+                <div >
+                    <img src="/pictures/2.png" alt="Pizza 1">
+                    <h3>Margherita</h3>
+                    <p>A classic pizza with mozzarella and tomatoes.</p>
+                    <span>$9.99</span>
+                    <br>
+                    <button class="add-to-cart-btn" data-item="Margherita">Add to Cart</button>
+                </div>
+                <div >
+                    <img src="/pictures/1.png" alt="Pizza 2">
+                    <h3>Pepperoni</h3>
+                    <p>Spicy pepperoni with mozzarella.</p>
+                    <span>$11.99</span>
+                    <br>
+                    <button class="add-to-cart-btn" data-item="Pepperoni">Add to Cart</button>
+                </div>
+                <div >
+                    <img src="/pictures/Pizza paradise.png" alt="Pizza 3">
+                    <h3>Veggie Delight</h3>
+                    <p>Loaded with fresh vegetables and cheese.</p>
+                    <span>$10.99</span>
+                    <br>
+                    <button class="add-to-cart-btn" data-item="Veggie Delight">Add to Cart</button>
+                </div>
+            </figure>
+        </div>
+
+        <!-- Pastas Section -->
+        <div id="pastas" class="category">
+            <h3>Pastas</h3>
+            <figure class="row">
+                <div >
+                    <img src="/pictures/Italian pasta.png" alt="Pata 1">
+                    <h3>Spaghetti Bolognese</h3>
+                    <p>Spaghetti with a rich bolognese sauce.</p>
+                    <span>$12.99</span>
+                    <br>
+                    <button class="add-to-cart-btn" data-item="Spaghetti Bolognese">Add to Cart</button>
+                </div>
+                <div >
+                    <img src="/pictures/ziggie pasta.png" alt="Pasta 2">
+                    <h3>Fettuccine Alfredo</h3>
+                    <p>Creamy alfredo sauce with fettuccine pasta.</p>
+                    <span>$13.99</span>
+                    <br>
+                    <button class="add-to-cart-btn" data-item="Fettuccine Alfredo">Add to Cart</button>
+                </div>
+                <div >
+                    <img src="/pictures/spaghetti.png" alt="Pasta 3">
+                    <h3>Carbonara</h3>
+                    <p>A delicious pasta with eggs, cheese, and pancetta.</p>
+                    <span>$14.99</span>
+                    <br>
+                    <button class="add-to-cart-btn" data-item="Carbonara">Add to Cart</button>
+                </div>
+            </figure>
+        </div>
+
+        <!-- Rice Section -->
+        <div id="rice" class="category">
+            <h3>Rice</h3>
+            <figure class="row">
+                <div >
+                    <img src="/pictures/egg fried rice.png" alt="Rice 1">
+                    <h3>Fried Rice</h3>
+                    <p>Stir-fried rice with vegetables and chicken.</p>
+                    <span>$8.99</span>
+                    <br>
+                    <button class="add-to-cart-btn" data-item="Fried Rice">Add to Cart</button>
+                </div>
+                <div >
+                    <img src="/pictures/chicken biryani.png" alt="Rice 2">
+                    <h3>Chicken Biryani</h3>
+                    <p>A flavorful chicken biryani with spices and rice.</p>
+                    <span>$10.99</span>
+                    <br>
+                    <button class="add-to-cart-btn" data-item="Chicken Biryani">Add to Cart</button>
+                </div>
+                <div >
+                    <img src="/pictures/beef pulao.png" alt="Rice 3">
+                    <h3>Beef Pulao</h3>
+                    <p>A fragrant rice dish with a taste of beef.</p>
+                    <span>$7.99</span>
+                    <br>
+                    <button class="add-to-cart-btn" data-item="Beef Pulao">Add to Cart</button>
+                </div>
+            </figure>
+        </div>
+
+
+        <!-- Desserts Section -->
+        <div id="desserts" class="category">
+            <h3>Desserts</h3>
+            <figure class="row">
+                <div >
+                    <img src="/pictures/chocolate cake.png" alt="Dessert 1">
+                    <h3>Chocolate Cake</h3>
+                    <p>A rich chocolate cake with creamy frosting.</p>
+                    <span>$5.99</span>
+                    <br>
+                    <button class="add-to-cart-btn" data-item="Chocolate Cake">Add to Cart</button>
+                </div>
+                <div >
+                    <img src="/pictures/brownies.png" alt="Dessert 2">
+                    <h3>Browny</h3>
+                    <p>A delicious browny with chocolate cream.</p>
+                    <span>$4.99</span>
+                    <br>
+                    <button class="add-to-cart-btn" data-item="Browny">Add to Cart</button>
+                </div>
+                <div >
+                    <img src="/pictures/pan cakes.png" alt="Dessert 3">
+                    <h3>Pan Cakes</h3>
+                    <p>A creamy pancakes with a buttery crust.</p>
+                    <span>$6.99</span>
+                    <br>
+                    <button class="add-to-cart-btn" data-item="Pancake">Add to Cart</button>
+                </div>
+            </figure>
+        </div>
+
+        <!-- Drinks Section -->
+        <div id="drinks" class="category">
+            <h3>Drinks</h3>
+            <figure class="row">
+                <div >
+                    <img src="/pictures/mint margarita.png" alt="Drink 1">
+                    <h3>Mint Margarita</h3>
+                    <p>Refresh your mind with a taste of Mint.</p>
+                    <span>$2.99</span>
+                    <br>
+                    <button class="add-to-cart-btn" data-item="MintMargarita">Add to Cart</button>
+                </div>
+                <div >
+                    <img src="/pictures/Strwaberry icecream shake.png" alt="Drink 2">
+                    <h3>Ice-Cream Shake</h3>
+                    <p>Shake with a layer of icecream.</p>
+                    <span>$3.99</span>
+                    <br>
+                    <button class="add-to-cart-btn" data-item="Ice-cream Shake">Add to Cart</button>
+                </div>
+                <div >
+                    <img src="/pictures/Rasberry juice.png" alt="Drink 3">
+                    <h3>Juice</h3>
+                    <p>A refreshing cold juice.</p>
+                    <span>$1.99</span>
+                    <br>
+                    <button class="add-to-cart-btn" data-item="Juice">Add to Cart</button>
+                </div>
+            </figure>
+        </div>
+
+        <!-- Starter Section -->
+        <div id="starters" class="category">
+            <h3>Starters</h3>
+            <figure class="row">
+                <div >
+                    <img src="/pictures/spring roll.jpg" alt="Starter 1">
+                    <h3>Spring Rolls</h3>
+                    <p>Crispy rolls filled with vegetables.</p>
+                    <span>$4.99</span>
+                    <br>
+                    <button class="add-to-cart-btn" data-item="Spring Rolls">Add to Cart</button>
+                </div>
+                <div >
+                    <img src="/pictures/garlic bread.jpg" alt="Starter 2">
+                    <h3>Garlic Bread</h3>
+                    <p>Buttery garlic bread with herbs.</p>
+                    <span>$3.99</span>
+                    <br>
+                    <button class="add-to-cart-btn" data-item="Garlic Bread">Add to Cart</button>
+                </div>
+                <div >
+                    <img src="/pictures/burchetta.jpg" alt="Burger 3">
+                    <h3>Bruschetta</h3>
+                    <p>Toasted bread with fresh tomato and basil.</p>
+                    <span>$5.49</span>
+                    <br>
+                    <button class="add-to-cart-btn" data-item="Bruschetta">Add to Cart</button>
+                </div>
+            </figure>
+        </div>
+
+        <!-- Deals Section -->
+        <div id="deals" class="category">
+            <h3>Deals</h3>
+            <figure class="row">
+                <div >
+                    <img src="/pictures/d2.png" alt="Burger 1">
+                    <h3>Family Combo</h3>
+                    <p>Includes burgers, fries, and drinks for 4.</p>
+                    <span>$29.99</span>
+                    <br>
+                    <button class="add-to-cart-btn" data-item="Family Combo">Add to Cart</button>
+                </div>
+                <div >
+                    <img src="/pictures/d1.png" alt="Burger 2">
+                    <h3>Pizza Party</h3>
+                    <p>Two pizzas, sides, and drinks.</p>
+                    <span>$24.99</span>
+                    <br>
+                    <button class="add-to-cart-btn" data-item="Pizza Party">Add to Cart</button>
+                </div>
+                <div >
+                    <img src="/pictures/d3.png" alt="Burger 3">
+                    <h3>Party Platter</h3>
+                    <p>Perfect for groups: burgers, sides, and drinks.</p>
+                    <span>$34.99</span>
+                    <br>
+                    <button class="add-to-cart-btn" data-item="Party Platter">Add to Cart</button>
+                </div>
+            </figure>
+        </div>
+
+        <!-- BBQ Section -->
+        <div id="bbq" class="category">
+            <h3>BBQ</h3>
+            <figure class="row">
+                <div >
+                    <img src="/pictures/bbq ribs.jpg" alt="Burger 1">
+                    <h3>BBQ Ribs</h3>
+                    <p>Tender ribs with smoky BBQ sauce.</p>
+                    <span>$15.99</span>
+                    <br>
+                    <button class="add-to-cart-btn" data-item="BBQ Ribs">Add to Cart</button>
+                </div>
+                <div >
+                    <img src="/pictures/bbq chick.jpg" alt="Burger 2">
+                    <h3>BBQ Chicken</h3>
+                    <p>Grilled chicken with BBQ sauce.</p>
+                    <span>$12.99</span>
+                    <br>
+                    <button class="add-to-cart-btn" data-item="BBQ Chicken">Add to Cart</button>
+                </div>
+                <div >
+                    <img src="/pictures/grilled veg.jpg" alt="Burger 3">
+                    <h3>Grilled Veggies</h3>
+                    <p>Grilled vegetables with BBQ seasoning.</p>
+                    <span>$10.99</span>
+                    <br>
+                    <button class="add-to-cart-btn" data-item="Grilled Veggies">Add to Cart</button>
+                </div>
+            </figure>
+        </div>
+    </div>
+    <div id="slidebar" class="slidebar">
+        <div class="slidebar-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="item-name">Item Name</h2>
+            <p>Price: <span id="item-price">$0.00</span></p>
+            <img id="item-image" src="" alt="Product Image" class="product-image" />
+            <form id="cart-form">
+                <section class="label">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" value="1" min="1" required>
+                </section>
+                <section class="label">
+                <label for="flavor">Flavor:</label><br>
+                <select id="flavor" name="flavor" required>
+                    <option value="Original">Original</option>
+                    <option value="Spicy">Spicy</option>
+                    <option value="Cheese">Cheese</option>
+                </select>
+            </section>
+            <br>
+            <div>
+                <button type="button" id="slider-add-to-cart-btn" class="add-to-cart-btn" href="/add-to-cart">Add to Cart</button>
+                <button type="button" id="checkout-btn" class="btn btn-success" href="/checkout">Checkout</button>
+            </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer bg-dark text-light">
+        <div class="container">
+            <div class="row">
+                <!-- Contact and Links -->
+                <div id="Contact" class="col-md-6">
+                    <h4>Contact Us</h4>
+                    <p>If you have any questions or would like to make a reservation, feel free to reach out!</p>
+    
+                    <!-- Contact Form -->
+                    <form id="contact-form" action="#" method="GET" class="contact-form mt-3">
+                        <div class="form-group">
+                            <label for="contact-name">Name</label>
+                            <input type="text" id="contact-name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Subject</label>
+                            <input type="text" id="contact-subject" name="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" name="message" class="form-control" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+    
+                </div>
+    
+                <!-- Social Media and Subscription -->
+                <div class="col-md-6 text-md-right">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com" class="text-light mr-3"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com" class="text-light mr-3"><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <div class="newsletter">
+                        <h4>Subscribe to our Newsletter</h4>
+                        <form id="subscribe-form" method="GET" class="subscribe-form">
+                            <input type="email" name="email" placeholder="Enter your email" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>                    
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script src="login.js"></script>
+    <script src="cart.js"></script>
+    <script src="checkout.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
